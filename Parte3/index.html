@@ -18,13 +18,17 @@
       ];
 
       /*
-
         Funciones 1 -  Crea una funcion llamada "mayusculas" que:
         - recibe como argumento el arreglo "nombres" y escribe en consola (console.log) cada nombre en mayuscula. 
         - el arreglo original no se modifica.
-    */
+      */
 
       // CREA TU FUNCION MAYUSCULAS aqui:
+      const mayusculas = (nombres) => {
+        nombres.forEach((name) => {
+          console.log(name);
+        });
+      };
 
       /*
         Funciones 2 -  Crea una funcion llamada "calculateDogAge" que: 
@@ -34,12 +38,14 @@
         - Deberá escribir en consola "Tu perro tiene NN años perro"
         - EJ:   calculateDogAge(2)  -> "Tu pero tiene 14 años perro"
 
-    */
+      */
 
       // CREA TU FUNCION calculateDogAge aqui:
+      const calculateDogAge = (age) => {
+        console.log(`Tu perro tiene ${age * 7} años perro`);
+      };
 
       /*
-
         ### Funciones 3 - Crea 2 funciones. Una llamada celsiusToFahrenheit que:
 
         - reciba un número y lo convierta de celsius a Fahrenheit , posteriormente que escriba el resultado en consola.
@@ -57,9 +63,16 @@
 
         fahrenheitToCelsius(95) --> 35
 
-    */
+      */
 
       // CREA TUS FUNCIONES  aqui:
+      const celsiusToFahrenheit = (celsius) => {
+        console.log(Math.round((9 / 5) * celsius + 32));
+      };
+
+      const fahrenheitToCelsius = (farenheit) => {
+        console.log(Math.round((5 / 9) * (farenheit - 32)));
+      };
 
       /*  OBJETOS 
 
@@ -74,9 +87,15 @@
 
         C) Con un console.log escribe el nombre del primer objeto, el color del segundo, y la raza del tercero. 
         Lo puedes hacer en una sola línea o en 3 lineas aparte. 
+      */
 
-
-    */
+      class Perro {
+        constructor(nombre, color, raza) {
+          this.nombre = nombre;
+          this.color = color;
+          this.raza = raza;
+        }
+      }
 
       /***
        *
@@ -94,8 +113,14 @@
        *        PRUEBA TUS OBJETOS AQUI
        *
        ***/
+      const perro1 = new Perro("Juan", "rojo", "chihuahua");
+      const perro2 = new Perro("Pancho", "azul", "golden");
+      const perro3 = new Perro("Doge", "morado", "Shiba Inu");
+
+      console.log(perro1.nombre);
+      console.log(perro2.color);
+      console.log(perro3.raza);
     </script>
   </head>
-
   <body></body>
 </html>
