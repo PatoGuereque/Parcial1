@@ -1,0 +1,32 @@
+img {
+  max-height: 50%;
+  max-width: 50%;
+  border: 5px double black;
+}
+
+/* QUOTE */
+h3 {
+  font-size: 15px;
+}
+
+/* TIMELINE DATE */
+.timestamp {
+  font-weight: bold;
+}
+
+body {
+  background-color: beige;
+}
+
+header > * {
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  padding-bottom: 10px;
+}
+
+footer {
+  margin-top: 50px;
+}
